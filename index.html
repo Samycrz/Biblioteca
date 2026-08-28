@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <img src="./img/logo.png" class="logo" alt="Logo">
+        <h1>Catálogo de Livros</h1>
+        
+        <div class="busca">
+            <input type="text" id="inputBusca" placeholder="Buscar livro pelo título...">
+            <button onclick="buscarLivro()">Pesquisar</button>
+        </div>
+    </div>
+
+    <div class="biblioteca" id="listaLivros">
+        
+        <div class="livro">
+            <img src="./img/codigo_limpo.jpg" alt="Código Limpo">
+            <h2>Código Limpo</h2>
+            <p>Autor: Robert C. Martin</p>
+            <p class="descricao">Regras e princípios essenciais para escrever códigos legíveis e de fácil manutenção.</p>
+            <p class="preco">R$ 89</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/progpragmatico.jpg" alt="O Programador Pragmático">
+            <h2>O Programador Pragmático</h2>
+            <p>Autor: Andrew Hunt, David Thomas</p>
+            <p class="descricao">Conselhos práticos e atemporais sobre o ofício e a mentalidade do desenvolvimento de software.</p>
+            <p class="preco">R$ 95</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/entendendo_algoritmos.webp" alt="Entendendo Algoritmos">
+            <h2>Entendendo Algoritmos</h2>
+            <p>Autor: Aditya Y. Bhargava</p>
+            <p class="descricao">Um guia ilustrado e prático que descomplica os principais algoritmos da ciência da computação.</p>
+            <p class="preco">R$ 75</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/1984.jpg" alt="1984">
+            <h2>1984</h2>
+            <p>Autor: George Orwell</p>
+            <p class="descricao">Uma obra-prima distópica que alerta sobre os perigos do totalitarismo e da vigilância constante.</p>
+            <p class="preco">R$ 45</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/senhordosaneis.jpg" alt="O Senhor dos Anéis">
+            <h2>O Senhor dos Anéis</h2>
+            <p>Autor: J.R.R. Tolkien</p>
+            <p class="descricao">A jornada épica de Frodo Bolseiro para destruir o Um Anel e salvar a Terra-média.</p>
+            <p class="preco">R$ 120</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/opequeno_principe.jpg" alt="O Pequeno Príncipe">
+            <h2>O Pequeno Príncipe</h2>
+            <p>Autor: Antoine de Saint-Exupéry</p>
+            <p class="descricao">Uma fábula poética e atemporal sobre a essência da vida, o amor e a amizade.</p>
+            <p class="preco">R$ 35</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/dom_quixote.jpg" alt="Dom Quixote">
+            <h2>Dom Quixote</h2>
+            <p>Autor: Miguel de Cervantes</p>
+            <p class="descricao">As hilárias e trágicas aventuras de um fidalgo que enlouquece lendo romances de cavalaria.</p>
+            <p class="preco">R$ 60</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/crime_e_castigo.jpg" alt="Crime e Castigo">
+            <h2>Crime e Castigo</h2>
+            <p>Autor: Fiódor Dostoiévski</p>
+            <p class="descricao">A profunda análise psicológica de um jovem estudante que comete um assassinato e lida com a culpa.</p>
+            <p class="preco">R$ 55</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/karamazov.webp" alt="Os Irmãos Karamázov">
+            <h2>Os Irmãos Karamázov</h2>
+            <p>Autor: Fiódor Dostoiévski</p>
+            <p class="descricao">Um romance filosófico apaixonante que explora a fé, a dúvida e a moralidade através de uma família russa.</p>
+            <p class="preco">R$ 80</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/noites_brancas.jpg" alt="Noites Brancas">
+            <h2>Noites Brancas</h2>
+            <p>Autor: Fiódor Dostoiévski</p>
+            <p class="descricao">Um conto melancólico sobre solidão, ilusões e um amor não correspondido nas noites de São Petersburgo.</p>
+            <p class="preco">R$ 30</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/annefrank.webp" alt="O Diário de Anne Frank">
+            <h2>O Diário de Anne Frank</h2>
+            <p>Autor: Anne Frank</p>
+            <p class="descricao">Os relatos emocionantes de uma jovem judia escondida durante a ocupação nazista nos Países Baixos.</p>
+            <p class="preco">R$ 40</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/tortoarado.webp" alt="Torto Arado">
+            <h2>Torto Arado</h2>
+            <p>Autor: Itamar Vieira Junior</p>
+            <p class="descricao">Uma história poderosa sobre a vida, o trabalho e a resistência de duas irmãs no sertão da Bahia.</p>
+            <p class="preco">R$ 50</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/mentirosos.jpg" alt="Mentirosos">
+            <h2>Mentirosos</h2>
+            <p>Autor: E. Lockhart</p>
+            <p class="descricao">Um suspense psicológico sobre uma família rica, uma ilha particular e um verão cheio de segredos sombrios.</p>
+            <p class="preco">R$ 45</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/familiamentirosos.jpg" alt="Família de Mentirosos">
+            <h2>Família de Mentirosos</h2>
+            <p>Autor: E. Lockhart</p>
+            <p class="descricao">O prequel envolvente do sucesso "Mentirosos", revelando os segredos de uma geração anterior da família Sinclair.</p>
+            <p class="preco">R$ 45</p>
+        </div>
+
+        <div class="livro">
+            <img src="./img/outliers.jpg" alt="Outliers: Fora de Série">
+            <h2>Outliers: Fora de Série</h2>
+            <p>Autor: Malcolm Gladwell</p>
+            <p class="descricao">Uma investigação fascinante sobre as razões pelas quais algumas pessoas alcançam um sucesso extraordinário.</p>
+            <p class="preco">R$ 55</p>
+        </div>
+
+    </div>
+    
+    <p class="rodape">Minha Biblioteca @2026 - Todos os direitos reservados</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
